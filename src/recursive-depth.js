@@ -5,8 +5,7 @@ module.exports = class DepthCalculator {
     //throw new CustomError('Not implemented');
   depth = depth||1;
   //console.log(depth);
-  if (arr.some(e => Array.isArray(e))){
-    //depth++
+  if (arr.some(e => Array.isArray(e))){ 
     let newArr = arr.flat()
     depth = this.calculateDepth(newArr, depth)+1
   } 
