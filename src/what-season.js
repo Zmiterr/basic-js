@@ -2,7 +2,7 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason( date ) {
 	//if (Object.prototype.toString.call(date) === '[object Date]'){
-  //throw new CustomError('Not implemented');
+   //throw new CustomError('Not implemented');
 switch (date.getMonth()) {
   case 8:
   case 9:
@@ -26,6 +26,6 @@ switch (date.getMonth()) {
     break; 
   default:
     return('Unable to determine the time of year!');
-//}
+
 }
 };
